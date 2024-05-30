@@ -1,0 +1,345 @@
+/* Resetarea stilurilor implicite */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stiluri pentru body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    background-image: url('images/background.jpg'); /* Adresa către noua imagine de fundal */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Stiluri pentru header, main și footer */
+header, main, footer {
+    padding: 0;
+}
+
+/* Stiluri pentru navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    width: 100px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Stiluri pentru banner */
+.banner {
+    background-image: url('./images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    margin-top: 60px; /* Asigură că conținutul nu este acoperit de navbar */
+}
+
+.banner .content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Stiluri pentru secțiunea de galerie */
+.gallery {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.gallery-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery-container img {
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Stiluri pentru secțiunea de formular */
+.form-section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Stiluri pentru footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: relative; /* Asigură că footer-ul este întotdeauna sub conținut */
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin: 5px 0;
+}
+
+/* Imagine de fundal pentru secțiunea din stânga */
+.left-section {
+    background-image: url('./images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 30%;  /* Lățimea imaginii de fundal */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;  /* Poziționează imaginea în spatele conținutului */
+}
+
+/* Stiluri pentru secțiunea de prețuri */
+.pricing {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px; /* Adăugare padding pentru a preveni suprapunerea cu footer-ul */
+}
+
+.pricing-item {
+    width: 200px; /* Lățimea fixă a fiecărui element */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pricing-item img {
+    width: 100%; /* Asigură că imaginea ocupă întreaga lățime a containerului */
+    height: 150px; /* Setează o înălțime fixă pentru toate imaginile */
+    object-fit: cover; /* Ajustează imaginea pentru a umple containerul fără a-i schimba proporțiile */
+    border: 2px solid white; /* Adăugare chenar alb în jurul imaginii */
+    border-radius: 8px; /* Rotunjirea colțurilor chenarului */
+}
+/* Resetarea stilurilor implicite */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stiluri pentru body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+}
+
+/* Stiluri pentru navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    width: 100px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Stiluri pentru secțiunea despre noi */
+.about-us {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Stiluri pentru echipa */
+.team {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Stiluri pentru proiecte */
+.projects {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Stiluri pentru footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin: 5px 0;
+}
