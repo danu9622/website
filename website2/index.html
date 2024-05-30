@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie de Artă Modernă</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Galerie de Artă Modernă</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Acasă</a></li>
+            <li><a href="about.html">Despre</a></li>
+            <li><a href="collections.html">Colecții</a></li>
+            <li><a href="#" id="contact-link">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="gallery">
+            <img src="art1.jpg" alt="Imagine 1">
+            <img src="art2.jpg" alt="Imagine 2">
+            <img src="art3.jpg" alt="Imagine 3">
+            <img src="art4.jpg" alt="Imagine 4">
+            <img src="art5.jpg" alt="Imagine 5">
+            <img src="art6.jpg" alt="Imagine 6">
+            <img src="art7.jpg" alt="Imagine 7">
+            <img src="art8.jpg" alt="Imagine 8">
+            <!-- Adaugă mai multe imagini aici -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Galerie de Artă Modernă. Toate drepturile rezervate.</p>
+    </footer>
+    <script>
+        // JavaScript pentru funcționalități interactive
+        document.getElementById('contact-link').addEventListener('click', function(event) {
+            event.preventDefault(); // Oprire comportamentul implicit al link-ului
+
+            // Afișare mesaj de confirmare
+            if (confirm('Doriți să ne contactați?')) {
+                window.location.href = 'contact.html'; // Redirecționare către pagina de contact
+            }
+        });
+    </script>
+</body>
+</html>

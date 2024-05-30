@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Galerie de Artă Modernă</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Galerie de Artă Modernă</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="about.html">Despre</a></li>
+            <li><a href="collections.html">Colecții</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="contact">
+            <h2>Contactează-ne</h2>
+            <form id="contact-form">
+                <label for="name">Nume:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mesaj:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Trimite</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Galerie de Artă Modernă. Toate drepturile rezervate.</p>
+    </footer>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Mesajul a fost trimis! Mulțumim pentru contact.');
+        });
+    </script>
+</body>
+</html>
